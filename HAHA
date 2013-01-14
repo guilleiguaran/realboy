@@ -1,0 +1,5 @@
+	pushq %rbp
+	movq %rsp, %rbp
+	movq regs_sets+HL, %rdx # HL
+	movq $addr_sp_ptrs, %rdi
+	incq PC(%rdi)
